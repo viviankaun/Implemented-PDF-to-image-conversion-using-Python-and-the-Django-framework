@@ -19,8 +19,14 @@ When we delete our data aslo delete the files on our file system.
 
 #Table:
 ![This is an image](https://github.com/viviankaun/Project-Python-django/blob/main/img/table01.jpg)
+Django Model : Each Model has default PRIMARY KEY with auto increment.
+ 
 
-# for convert to images  
+#
+Django==2.1.3
+django-crispy-forms==1.7.2
+Pillow==5.3.0
+pytz==2018.4
 pdf2image 
                              
        
