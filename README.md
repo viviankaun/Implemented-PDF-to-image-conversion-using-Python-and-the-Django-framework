@@ -1,6 +1,6 @@
 # upload pdf then convert to images :
- 
-
+Upload pdf to the system and it will automatically split into multiple images.
+When we delete our data aslo remove the files on our file system. 
  
 
 # SQLlite with model :
@@ -13,7 +13,7 @@ Model.objects.raw("SELECT c.id, project_name, project_description, pdf_file, '/'
 
 
 # django Framework:
-When we delete our data aslo delete the files on our file system. 
+
 
 
 
@@ -24,7 +24,9 @@ Django Model : Each Model has default PRIMARY KEY with auto increment.
 
 #
 Django==2.1.3
+
 django-crispy-forms==1.7.2
+
 Pillow==5.3.0
 pytz==2018.4
 pdf2image 
