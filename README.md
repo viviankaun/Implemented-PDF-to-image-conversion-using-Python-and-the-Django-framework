@@ -16,8 +16,9 @@ Model.objects.raw("SELECT c.id, project_name, project_description, pdf_file, '/'
 When we delete our data aslo delete the files on our file system. 
 
 
-#Table:
 
+#Table:
+![This is an image](https://github.com/viviankaun/AWS_Spark/blob/main/img/table001.jpeg)
 
 # for convert to images  
 pdf2image 
