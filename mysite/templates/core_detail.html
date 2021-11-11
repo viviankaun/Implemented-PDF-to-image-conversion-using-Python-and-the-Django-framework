@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <header class="py-5">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-5 fw-bold">{{ form.project_name }}</h1>
+                        <p class="fs-4">{{ form.project_description }}</p>
+                        {% for img in formImg %}
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ img.img_file.url }}" alt="..." /><br>
+                        {% endfor %}
+                        <form method="post" action="{% url 'delete_core' form.pk %}">
+                        {% csrf_token %}
+                         <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+{% endblock %}
