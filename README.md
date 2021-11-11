@@ -18,7 +18,7 @@ When we delete our data aslo delete the files on our file system.
 
 
 #Table:
-![This is an image](https://github.com/viviankaun/AWS_Spark/blob/main/img/table001.jpeg)
+![This is an image](https://github.com/viviankaun/Project-Python-django/blob/main/img/table01.jpg)
 
 # for convert to images  
 pdf2image 
