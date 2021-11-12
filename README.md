@@ -5,11 +5,11 @@ When we delete our data aslo remove the files on our file system.
 
 ## SQLlite with model :
 1. Create a model for multiple tables 
-'''
+```
 Model.objects.raw("SELECT c.id, project_name, project_description, pdf_file, '/' || min( img_file ) img_file \
                                     FROM  core_wefunder c join core_wefunderimg i on c.id = pdf_id \
                                     group by c.id, project_name, pdf_file ")
-'''
+```
                                     
 2. Merge coloumns using || syntax which it is differnet MSSQL, MYSQL    
 
