@@ -1,13 +1,32 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% load crispy_forms_tags %}
 
 {% block content %}
+<style>
+  .centered {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+.centered1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate( 50%,  50%);
+}
+</style>
+
   <h2>Create new project</h2>
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form|crispy }}
     <br>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" name="submit" class="btn btn-primary" onclick="javascript:document.getElementById('upload').className='centered'">Submit</button>
+    <img src='/upload/uploading.gif' id="upload" class="centered1" >
   </form>
+
 {% endblock %}
