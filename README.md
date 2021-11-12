@@ -1,4 +1,4 @@
-# upload pdf then convert to images :
+# Upload pdf then split to images :
 Upload pdf to the system and it will automatically split into multiple images.
 When we delete our data aslo remove the files on our file system. 
  
@@ -19,7 +19,7 @@ Model.objects.raw("SELECT c.id, project_name, project_description, pdf_file, '/'
 Django Model : Each Model has default PRIMARY KEY with auto increment.
  
 
-#
+### requirements
 - Django==2.1.3
 - python==3
 - django-crispy-forms==1.7.2
