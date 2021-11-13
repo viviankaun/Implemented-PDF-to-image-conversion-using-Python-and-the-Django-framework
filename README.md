@@ -28,9 +28,14 @@ sqlite > .table
 ![This is an image](https://github.com/viviankaun/Project-Python-django/blob/main/img/table01.jpg)
 Django Model : Each Model has default PRIMARY KEY with auto increment.
  
-## preparre environment
+## package manager for mac
 ```
-python3 -m venv .eenv 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+## preparre environment if you installed python3 and pipenv already
+```
+python3 -m venv .env 
 source .env/bin/activate
 pip install django
 django-admin startproject mysite
