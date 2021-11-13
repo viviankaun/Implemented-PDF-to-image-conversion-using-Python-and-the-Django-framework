@@ -28,6 +28,19 @@ sqlite > .table
 ![This is an image](https://github.com/viviankaun/Project-Python-django/blob/main/img/table01.jpg)
 Django Model : Each Model has default PRIMARY KEY with auto increment.
  
+## preparre environment
+```
+python3 -m venv .eenv 
+source .env/bin/activate
+pip install django
+django-admin startproject mysite
+python manage.py startapp core
+```
+## when we modifie model
+```
+python manage.py makemigrations
+python manage.py migrate
+```
 
 ### requirements
 - Django==2.1.3
