@@ -36,7 +36,7 @@ pip install django
 django-admin startproject mysite
 python manage.py startapp core
 ```
-## when we modifie model
+## when we modify model
 ```
 python manage.py makemigrations
 python manage.py migrate
