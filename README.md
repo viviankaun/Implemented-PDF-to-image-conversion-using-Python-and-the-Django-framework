@@ -3,10 +3,10 @@ Upload pdf to the system and it will automatically split into multiple images.
 When we delete our data aslo remove the files on our file system. 
  
 ###
-urls.py : URL configuration.  
-view.py : Most of the logic flow.
-model.py: Generally, each model maps to a single database table.
-form.py : we use customized form and map to table.
+1. urls.py : URL configuration.  
+2. view.py : Most of the logic flow.
+3. model.py: Generally, each model maps to a single database table.
+4. form.py : we use customized form and map to table.
 
 
 ## SQLlite with model :
